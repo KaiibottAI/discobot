@@ -17,6 +17,7 @@ class MyClient(discord.Client):
             return
         if message.content.startswith("$hello"):
             await message.channel.send("Hello!", mention_author=True)
+            print(discord.abc.User)
 
         if message.content.startswith("$rps"):
             await message.channel.send("Rock Paper Scissors, GO!")
